@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import nosotros from '../img/nosotros.jpg'
+---
+
+<Layout title="Nosotros" description="Página de tienda de instrumentos musicales, guitarras, cursos, blog y más-">
+	<main class="contenedor">
+		<h1 class="heading">Nosotros</h1>
+
+		<div class="contenido">
+			<img src={nosotros} alt="Imagen sobre nosotros" />
+
+			<div>
+				<p>¿Te apasiona la música y quieres aprender a tocar la guitarra eléctrica? ¿O ya eres un guitarrista experimentado y buscas renovar tu equipo? Sea cual sea tu nivel y estilo, en GuitarLa encontrarás todo lo que necesitas para disfrutar de tu instrumento favorito. GuitarLA es una tienda virtual que ofrece una gran variedad de guitarras eléctricas, amplificadores, pedales, accesorios y más, de las mejores marcas y a los mejores precios. Además, podrás acceder a cursos de guitarra online, impartidos por profesores cualificados y adaptados a tu ritmo y objetivos. Desde los fundamentos básicos hasta las técnicas más avanzadas, aprenderás a tocar la guitarra eléctrica con soltura y confianza.</p>
+
+				<p>GuitarLA es más que una tienda, es una comunidad de amantes de la guitarra eléctrica. Al comprar en GuitarLA, no solo recibirás tu pedido en tu domicilio con rapidez y seguridad, sino que también podrás beneficiarte de ventajas exclusivas, como descuentos especiales, sorteos, regalos y mucho más. Además, podrás compartir tus experiencias, dudas y consejos con otros guitarristas en nuestro foro y redes sociales. GuitarLA es el lugar ideal para los que quieren vivir la música al máximo. ¿A qué esperas? Visita nuestra página web y descubre todo lo que tenemos para ti.</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.contenido {
+    display: grid;
+    gap: 4rem;
+	}
+	@media (min-width: 768px) {
+		.contenido {
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+		}
+	}
+</style>
